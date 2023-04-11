@@ -1,16 +1,23 @@
 body{
   background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .Calculator{
     display: grid;
-    grid-template-rows: 20% 70% 10%;
-    min-height: 700px;
+    width: 98%;
+    grid-template-rows: 20% 70% 9%;
+    min-height:95vh ;
+    margin: 1% !important;
+    
+    /* margin-left: 1%; */
     
 }
 .nav{
     background-color: grey;
     text-align: center;
+    font-size: 1rem;
     
 }
 .left,.right{
@@ -18,23 +25,25 @@ body{
 }
 .mid{
     display: grid;
-    grid-template-columns: 10% 80% 10%;
-    
+    grid-template-columns: 20% 60% 20% !important;
+    /* overflow: hidden; */
 
 }
 .screen{
     background-color: black;
     color: whitesmoke;
     border:solid 2px white;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
-    font-size: 60px;
+    font-size: 3rem;
     overflow-x: scroll;
+    /* overflow: hidden; */
 
 
 }
 .body_cal{
     display: grid;
+      /* overflow: hidden; */
     grid-template-rows: 40% 60%;
     /* overflow: scroll; */
 
@@ -45,14 +54,13 @@ background-color: black;
 display: grid;
 border:solid 2px white;
 grid-template-rows: 20% 20% 20% 20% 20%;
-/* overflow: scroll; */
 margin: 0;
 padding: 0;
 }
 .per_button{
      display: grid;
     grid-template-columns:  25% 25% 25% 25%;
-    width: 100%;
+    /* width: 100%; */
     /* margin:50px; */
     /* padding: 0; */
 
@@ -60,16 +68,20 @@ padding: 0;
 .button{
   color: black;
   background-color:palevioletred;
-  border-radius: 5%;    
-  width: 80%;
-  margin: 5px;
-  font-size: 40px;
-  overflow: hidden;
+  /* border-radius: 5%;     */
+  box-shadow: 0.01rem 0.01rem 0.02rem 0.02rem white;
+    width:   80%;
+    height: 80%;
+  margin: 0.3rem;
+  font-size: 100%;
+  /* overflow: hidden; */
 }
 .footer{
     background-color: gray;
     text-align: center;
-    padding: 20px;
+    padding: 1%;
+    font-size: 100%;
+    color: white;
 }
 button:hover{
     background-color: salmon;
